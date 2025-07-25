@@ -577,6 +577,7 @@ textarea{
   width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
+    margin-top: 14px;
 }
 .continue-btn{
   width: 100%;
