@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!--Font cdn-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <title>Ravix</title>
+  <!--custom design-->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <button class="btn btn-lg btn-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-start offcanv-font" data-bs-scroll="true" tabindex="-1"
+          id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+              Welcome!
+            </h6>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column gap-4">
+            <ul class="offcanvas-ul">
+              <li><a href="./justForYou.html">+ Just for You</a></li>
+            </ul>
+            <ul class="offcanvas-ul d-flex flex-column gap-2">
+              <li>
+                <i class="fa-solid fa-car-side fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Cars</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-sailboat fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Yachts</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-motorcycle fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Motorcycles</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-jet-fighter-up fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Jets</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-helicopter fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Helicopters</a>
+              </li>
+            </ul>
+            <ul class="offcanvas-ul d-flex flex-column gap-2">
+            
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="./index.html" class="logo-img"><img src="./assets/img/general/Ravix_logo.png" alt="" /></a>
+        <a href="./login.html" class="d-none d-md-block btn-login rounded-start-pill rounded-end-pill p-2">
+          <i class="fa-solid fa-user fa-sm" style="color: #111b1e;"></i> &#160;
+          Log in
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <div class="navbar-container d-flex justify-content-evenly mt-3 mb-3">
+        <a href="./cars.html">Cars</a>
+        <a href="./cars.html">Yachts</a>
+        <a href="./cars.html">Jets</a>
+        <a href="./cars.html">Motorcycles</a>
+        <a href="./cars.html">Helicopters</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero-slider position-relative">
+      <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="carousel"
+        data-bs-interval="2500">
+        <div class="carousel-inner">
+          <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+            <div class="carousel-item active">
+              <img src="./assets/img/home_page/img_slider.jpg" class="d-block w-100 carousel-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4 fw-bold">Built for Impact</h2>
+                <p class="lead">Make your presence known wherever you go</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/home_page/cars_.jpg" class="d-block w-100 carousel-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4 fw-bold">Bold Looks. Clean Lines</h2>
+                <p class="lead">Simplicity that speaks volumes</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/home_page/helicopters_.jpg" class="d-block w-100 carousel-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4 fw-bold">Precision in Motion</h2>
+                <p class="lead">Every detail crafted with purpose</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/home_page/jets_.jpg" class="d-block w-100 carousel-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4 fw-bold">Live Without Limits</h2>
+                <p class="lead"> Don’t follow trends—set them</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/home_page/motorcycle_.jpg" class="d-block w-100 carousel-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4 fw-bold">Designed to Lead</h2>
+                <p class="lead">Power and elegance in one experience</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/home_page/yachts_.jpg" class="d-block w-100 carousel-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4 fw-bold"> Your Vision. Realized</h2>
+                <p class="lead">Create the life you want to live</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="intro-section mt-4">
+      <div class="container text-center h-100 d-flex flex-column justify-content-evenly">
+        <h2 class="headTitle fs-1 fw-bolder">Ravix</h2>
+        <div class="line"></div>
+        <p class="intro fs-5">
+          Explore the world of luxury without limits.<br />
+          Step into a curated experience where performance meets prestige and every detail is crafted for
+          distinction.<br />
+          At Everything Luxury, we bring you an exclusive collection of elite vehicles — from powerful cars and
+          high-performance motorcycles to opulent yachts, private helicopters, and cutting-edge jets.
+          All in one destination.<br />
+
+          Choose from machines engineered for speed, power, and design.<br />
+          Every model in our collection is selected to deliver not just transportation, but status and experience.<br />
+
+          Whether you're driving through the city, cruising the seas, or flying above it all —
+          you move with authority, style, and presence.<br />
+
+          Elevate how you travel.<br />
+          Define how you arrive.
+        </p>
+      </div>
+    </section>
+
+
+    <h2 class="cat-heading text-center fw-bold">Featured Categories</h2>
+    <section class="featured-categories mt-2">
+      <div class="items">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="cars-tab" data-bs-toggle="tab" data-bs-target="#cars-tab-pane"
+              type="button" role="tab" aria-controls="cars-tab-pane" aria-selected="true"
+              data-bg="./assets/img/home_page/featured_categories/cars.jpg">Cars</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="helicopters-tab" data-bs-toggle="tab" data-bs-target="#helicopters-tab-pane"
+              type="button" role="tab" aria-controls="helicopters-tab-pane" aria-selected="false"
+              data-bg="./assets/img/home_page/featured_categories/helicopters.jpg">Helicopters</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="jets-tab" data-bs-toggle="tab" data-bs-target="#jets-tab-pane" type="button"
+              role="tab" aria-controls="jets-tab-pane" aria-selected="false"
+              data-bg="./assets/img/home_page/featured_categories/jets.jpg">Jets</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="motorcycles-tab" data-bs-toggle="tab" data-bs-target="#motorcycles-tab-pane"
+              type="button" role="tab" aria-controls="motorcycles-tab-pane" aria-selected="false"
+              data-bg="./assets/img/home_page/featured_categories/motorcycle.jpg">Motorcycles</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="yachts-tab" data-bs-toggle="tab" data-bs-target="#yachts-tab-pane"
+              type="button" role="tab" aria-controls="yachts-tab-pane" aria-selected="false"
+              data-bg="./assets/img/home_page/featured_categories/yachts.jpg">Yachts</button>
+          </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="cars-tab-pane" role="tabpanel" aria-labelledby="cars-tab"
+            tabindex="0">
+            <div class="Featured_Item position-relative">
+              <!-- <img src="./assets/img/home_page/featured_categories/cars.jpg" /> -->
+              <div class="content-feat position-absolute">
+                <div class="cont-style">
+                  <h1 class="fw-bolder">Elite Rides</h1>
+                  <p>Unmatched performance and luxury</p>
+                </div>
+              </div>
+              <a href="./cars.html" class="position-absolute featured-btn p-3 rounded-pill fw-bold">Discover More
+                &#8594;</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="helicopters-tab-pane" role="tabpanel" aria-labelledby="helicopters-tab"
+            tabindex="0">
+            <div class="Featured_Item position-relative">
+              <!-- <img src="./assets/img/home_page/featured_categories/helicopters.jpg" /> -->
+              <div class="content-feat position-absolute">
+                <div class="cont-style">
+                  <h1 class="fw-bolder fs-1">Sky Prestige</h1>
+                  <p>Fly with speed, comfort, and power</p>
+                </div>
+              </div>
+              <a href="./cars.html" class="position-absolute featured-btn p-3 rounded-pill fw-bold">Discover More
+                &#8594;</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="jets-tab-pane" role="tabpanel" aria-labelledby="jets-tab" tabindex="0">
+            <div class="Featured_Item position-relative">
+              <!-- <img src="./assets/img/home_page/featured_categories/jets.jpg" /> -->
+              <div class="content-feat position-absolute">
+                <div class="cont-style">
+                  <h1 class="fw-bolder">Private Supremacy</h1>
+                  <p>Command the skies in absolute style</p>
+                </div>
+              </div>
+              <a href="./cars.html" class="position-absolute featured-btn p-3 rounded-pill fw-bold">Discover More
+                &#8594;</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="motorcycles-tab-pane" role="tabpanel" aria-labelledby="motorcycles-tab"
+            tabindex="0">
+            <div class="Featured_Item position-relative">
+              <!-- <img src="./assets/img/home_page/featured_categories/motorcycle.jpg" /> -->
+              <div class="content-feat position-absolute">
+                <div class="cont-style">
+                  <h1 class="fw-bolder">Pure Velocity</h1>
+                  <p>Feel the road like never before</p>
+                </div>
+              </div>
+              <a href="./cars.html" class="position-absolute featured-btn p-3 rounded-pill fw-bold">Discover More
+                &#8594;</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="yachts-tab-pane" role="tabpanel" aria-labelledby="yachts-tab" tabindex="0">
+            <div class="Featured_Item position-relative">
+              <!-- <img src="./assets/img/home_page/featured_categories/yachts.jpg" /> -->
+              <div class="content-feat position-absolute">
+                <div class="cont-style">
+                  <h1 class="fw-bolder">Ocean Class</h1>
+                  <p>Sail with grace and dominance</p>
+                </div>
+              </div>
+              <a href="./cars.html" class="position-absolute featured-btn p-3 rounded-pill fw-bold">Discover More
+                &#8594;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="stats text-dark py-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>+100</h2>
+            <p>Luxury Models</p>
+          </div>
+          <div class="col">
+            <h2>5</h2>
+            <p>Categories</p>
+          </div>
+          <div class="col">
+            <h2>24/7</h2>
+            <p>Service</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="users-Testimonials">
+      <div class="container">
+        <div id="carouseltestimonialsInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="testimonials-content">
+  <p>"Selling on Ravix changed the way we reach clients. Our brand now sits beside the most elite names in the world of luxury — and that speaks volumes to our customers."</p>
+  <small>Julia Chen, Nova Performance Cars, Hong Kong</small>
+</div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="testimonials-content">
+                <p>"I have been a fanatic of this site since it was called JamesList. It’s like craigslist meets offerup
+                  for the wealthy. Excellent place to find the unique gift for a loved one. It’s where I found a rare
+                  1960 Silver Cloud. That car that I spend nearly half of my life to find in pristine condition."</p>
+                <small>Mike, United States</small>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-content">
+                <p>"We joined Ravix as it provides us with an opportunity to present our bespoke classic car
+                  craftsmanship to an internationally targeted market of luxury purchasers. The platform has created
+                  that link on a global scale, all while maintaining the key message of our brand - something that is
+                  extremely important to our business."</p>
+                <small>Shawn Eastman, Hemmels, Cardiff, UK</small>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-content">
+                <p>"Ravix brought our luxury yacht business to a whole new audience. We’ve seen serious interest from
+                  high-net-worth clients we couldn’t reach before. The interface and support are top-tier."</p>
+                <small>Linda Marques, Vela Yachts, Miami, USA</small>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-content">
+                <p>"The exposure Ravix gave our helicopter fleet was unmatched. We connected with serious buyers within
+                  days. The platform respects both the brand and the client."</p>
+                <small>Hassan Al Qasimi, AeroLux, Dubai, UAE</small>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-content">
+                <p>"Listing our motorcycles on Ravix gave us direct access to a market that values performance and
+                  style. We’ve built real relationships with global collectors through this platform."</p>
+                <small>Marco Rinaldi, Vitesse Motors, Milan, Italy</small>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+
+              <div class="testimonials-content">
+                <p>"Working with Ravix has helped us position our private jet leasing company alongside the world’s top
+                  luxury names. It’s more than just a listing — it’s prestige."</p>
+                <small>Elena Varga, SkyPort Jets, Zurich, Switzerland</small>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-content">
+                <p>"Ravix reflects the quality and attention to detail that we demand in every vehicle we build. We’re
+                  proud to be part of a platform that speaks the same language of excellence."</p>
+                <small>Tom Becker, Becker Customs, Stuttgart, Germany</small>
+              </div>
+
+            </div>
+          </div>
+          <button class="carousel-control-prev control-btn" type="button" data-bs-target="#carouseltestimonialsInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next control-btn" type="button" data-bs-target="#carouseltestimonialsInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer p-4 mt-4">
+        <div class="container">
+           <div class="footer-container d-flex flex-wrap justify-content-between">
+             <div class="footer-logo">
+                <div class="logo-ravix text-start">
+                    <a href="./index.html">
+                        <img src="./assets/img/general/Ravix_logo.png" alt="ravix" />
+                    </a>
+                </div>
+                <div class="social-media d-flex flex-wrap justify-content-center gap-4 ms-4">
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-instagram fa-sm" style="color: #000;"></i></a>
+                    </div>
+                     <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter fa-sm" style="color: #000;"></i></a>
+                    </div>
+                     <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook-f fa-sm" style="color: #000;"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-youtube fa-sm" style="color: #000;"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin fa-sm" style="color: #000;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content d-flex justify-content-between">
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Megacars</a>
+                    <a href="#">Technology</a>
+                    <a href="#">About</a>
+                    <a href="#">History</a>
+                </div>
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Dealer locator</a>
+                    <a href="#">Shop</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Factory tours</a>
+                </div>
+            </div>
+           </div>
+           <div class="copyright d-flex flex-wrap justify-content-between mt-2">
+            <div class="copyrighthisto">
+                <small>Copyright © since 1994</small>
+            </div>
+            <div class="copyrightlinks w-50 d-flex justify-content-evenly">
+                <a href="#"><small>Sitemap</small></a>
+                <a href="#"><small>Cookie Policy</small></a>
+                <a href="#"><small>Legal Links</small></a>
+                <a href="#"><small>Investor relations</small></a>
+            </div>
+           </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

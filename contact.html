@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <!--Font cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <title>Ravix</title>
+    <!--custom design-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <button class="btn btn-lg btn-white" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-start offcanv-font" data-bs-scroll="true" tabindex="-1"
+                    id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h6 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Welcome!
+                        </h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column gap-4">
+                        <ul class="offcanvas-ul">
+                            <li><a href="./justForYou.html">+ Just for You</a></li>
+                        </ul>
+                        <ul class="offcanvas-ul d-flex flex-column gap-2">
+                            <li>
+                                <i class="fa-solid fa-car-side fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Cars</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-sailboat fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Yachts</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-motorcycle fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Motorcycles</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-jet-fighter-up fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Jets</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-helicopter fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Helicopters</a>
+                            </li>
+                        </ul>
+                        <ul class="offcanvas-ul d-flex flex-column gap-2">
+                           
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="./index.html" class="logo-img"><img src="./assets/img/general/Ravix_logo.png" alt="" /></a>
+                <a href="./login.html" class="d-none d-md-block btn-login rounded-start-pill rounded-end-pill p-2">
+                    <i class="fa-solid fa-user fa-sm" style="color: #111b1e;"></i> &#160;
+                    Log in
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="navbar-container d-flex justify-content-evenly mt-3 mb-3">
+                <a href="./cars.html">Cars</a>
+                <a href="./cars.html">Yachts</a>
+                <a href="./cars.html">Jets</a>
+                <a href="./cars.html">Motorcycles</a>
+                <a href="./cars.html">Helicopters</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="contact-page mt-5">
+            <div class="container py-5 d-flex flex-wrap justify-content-between">
+                <div class="contact-media">
+                    <h2 class="fw-bolder headTitle">Connect Whit Us</h2>
+                    <div class="media-links d-flex flex-column">
+                        <a href="#" class="media-link whs">
+                            <i class="fa-brands fa-whatsapp" style="color: #fff;"></i> &nbsp;<span>Call / Text
+                                Us</span>
+                        </a>
+                        <a href="#" class="media-link mail">
+                            <i class="fa-solid fa-envelope" style="color: #fff;"></i> &nbsp; <span>Email Us</span>
+                        </a>
+                        <a href="#" class="media-link loca">
+                            <i class="fa-solid fa-location-dot" style="color: #fff;"></i> &nbsp;<span>View
+                                Locatio</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="vehicle-info">
+                    <h3 class="fw-bolder headTitle">Vehicle Information</h3>
+                    <div class="data-info mt-3">
+                        <div class="name-info d-flex flex-wrap justify-content-between">
+                            <div class="first-name d-flex flex-column">
+                                <label for="firstName" class="fw-bolder">First Name</label>
+                            <input type="text" id="firstName" />
+                            </div>
+                            <div class="last-name d-flex flex-column">
+                                <label for="lastName" class="fw-bolder">Last Name</label>
+                            <input type="text" id="lastName" />
+                            </div>
+                        </div>
+                        <div class="email-info d-flex flex-column">
+                            <label for="email" class="fw-bolder">Email</label>
+                            <input type="email" id="email" required />
+                        </div>
+                        <div class="searching d-flex flex-column">
+                            <label for="search" class="fw-bolder">What are you looking for?</label>
+                            <input type="text" id="search" />
+                        </div>
+                        <button class="contact-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer p-4 mt-4">
+        <div class="container">
+            <div class="footer-container d-flex flex-wrap justify-content-between">
+                <div class="footer-logo">
+                    <div class="logo-ravix text-start">
+                        <a href="./index.html">
+                            <img src="./assets/img/general/Ravix_logo.png" alt="ravix" />
+                        </a>
+                    </div>
+                    <div class="social-media d-flex flex-wrap justify-content-center gap-4 ms-4">
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-instagram fa-sm" style="color: #000;"></i></a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-twitter fa-sm" style="color: #000;"></i></a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook-f fa-sm" style="color: #000;"></i></a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-youtube fa-sm" style="color: #000;"></i></a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-linkedin fa-sm" style="color: #000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content d-flex justify-content-between">
+                    <div class="contentSect d-flex flex-column justify-content-evenly">
+                        <a href="#">Megacars</a>
+                        <a href="#">Technology</a>
+                        <a href="#">About</a>
+                        <a href="#">History</a>
+                    </div>
+                    <div class="contentSect d-flex flex-column justify-content-evenly">
+                        <a href="#">Dealer locator</a>
+                        <a href="#">Shop</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                    <div class="contentSect d-flex flex-column justify-content-evenly">
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Factory tours</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright d-flex flex-wrap justify-content-between mt-2">
+                <div class="copyrighthisto">
+                    <small>Copyright © since 1994</small>
+                </div>
+                <div class="copyrightlinks w-50 d-flex justify-content-evenly">
+                    <a href="#"><small>Sitemap</small></a>
+                    <a href="#"><small>Cookie Policy</small></a>
+                    <a href="#"><small>Legal Links</small></a>
+                    <a href="#"><small>Investor relations</small></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

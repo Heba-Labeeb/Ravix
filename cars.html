@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <!--Font cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <!--custom design-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <button class="btn btn-lg btn-white" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-start offcanv-font" data-bs-scroll="true" tabindex="-1"
+                    id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h6 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Welcome!
+                        </h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column gap-4">
+                        <ul class="offcanvas-ul">
+                            <li><a href="./justForYou.html">+ Just for You</a></li>
+                        </ul>
+                        <ul class="offcanvas-ul d-flex flex-column gap-2">
+                            <li>
+                                <i class="fa-solid fa-car-side fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Cars</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-sailboat fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Yatchs</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-motorcycle fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Motorcycles</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-jet-fighter-up fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Jets</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-helicopter fa-xs" style="color: #151515;"></i>
+                                <a href="./cars.html">Helicopters</a>
+                            </li>
+                        </ul>
+                        <ul class="offcanvas-ul d-flex flex-column gap-2">
+                        
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="./index.html" class="logo-img"><img src="./assets/img/general/Ravix_logo.png" alt="" /></a>
+                <a href="./login.html" class="d-none d-md-block btn-login rounded-start-pill rounded-end-pill p-2">
+                    <i class="fa-solid fa-user fa-sm" style="color: #111b1e;"></i> &#160;
+                    Log in
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar-container mt-3">
+        <div class="container d-flex justify-content-evenly">
+            <a href="./brand.html">Bugatti</a>
+            <a href="./brand.html">Lamborghini</a>
+            <a href="./brand.html">Ferrari</a>
+            <a href="./brand.html">Porsche</a>
+            <a href="./brand.html">Mercedes</a>
+            <a href="./brand.html">Rolls-Royce</a>
+            <a href="./brand.html">BMW</a>
+            <a href="./brand.html">McLaren</a>
+            <a href="./brand.html">Pagani</a>
+            <a href="./brand.html">Brabus</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero position-relative">
+            <div class="video-bacground mt-4 w-100 position-relative">
+                <video autoplay muted loop playsinline disablePictureInPicture>
+                    <source src="./assets/video/car.mp4" type="video/mp4" />
+                </video>
+                <div class="video-overlay position-absolute top-0 start-0"></div>
+                <div
+                    class="video-content position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
+                    <h1 class="fw-bold"><span class="textColor">Ravix</span></h1>
+                    <p class="fs-1">Where performance meets presence</p>
+                </div>
+            </div>
+        </section>
+        <section class="popular-makes">
+            <div class="container">
+                <h2 class="cat-heading">Popular Makes</h2>
+                <div class="category-container d-flex flex-nowrap overflow-auto pb-2">
+                    <div class="cat-item d-flex flex-column mx-2">
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/bugatti.jpg" alt="Bugatti" />
+                        </a>
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/rolls_royce.jpg" alt="Rolls-Royce" />
+                        </a>
+                    </div>
+                    <div class="cat-item d-flex flex-column mx-2">
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/lamborghini.jpg" alt="Lamborghini" />
+                        </a>
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/bmw.jpg" alt="BMW" />
+                        </a>
+                    </div>
+                    <div class="cat-item d-flex flex-column mx-2">
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/ferrari.jpg" alt="Ferrari" />
+                        </a>
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/mclaren.jpg" alt="McLaren" />
+                        </a>
+                    </div>
+                    <div class="cat-item d-flex flex-column mx-2">
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/porsche.jpg" alt="Porsche" />
+                        </a>
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/pagani.jpg" alt="Pagani" />
+                        </a>
+                    </div>
+                    <div class="cat-item d-flex flex-column mx-2">
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/mercedes.jpg" alt="Mercedes" />
+                        </a>
+                        <a href="./brand.html">
+                            <img src="./assets/img/cars_page/brands/brabus.jpg" alt="Brabus" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-searches">
+            <div class="container">
+                <h2 class="cat-heading">Popular Searches</h2>
+                <div class="popular-cards d-flex flex-wrap gap-5">
+                    <div class="card cardStyle mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="./brand.html">
+                                    <img src="./assets/img/cars_page/popular_searches/bugatti_chiron.webp"
+                                        class="img-fluid card-img rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="./brand.html">
+                                        <h6 class="card-title">Bugatti Chiron</h6>
+                                        <p class="card-text"><small class="text-body-secondary">13 LISTING</small></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardStyle mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="./brand.html">
+                                    <img src="./assets/img/cars_page/popular_searches/bugatti_divo.webp"
+                                        class="img-fluid card-img rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="./brand.html">
+                                        <h6 class="card-title">Bugatti Divo</h6>
+                                        <p class="card-text"><small class="text-body-secondary">10 LISTING</small></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardStyle mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="./brand.html">
+                                    <img src="./assets/img/cars_page/popular_searches/ferrari_LaFerrari.webp"
+                                        class="img-fluid card-img rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="./brand.html">
+                                        <h6 class="card-title">Ferrari LaFerrari</h6>
+                                        <p class="card-text"><small class="text-body-secondary">7 LISTING</small></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardStyle mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="./brand.html">
+                                    <img src="./assets/img/cars_page/popular_searches/McLaren-senna.webp"
+                                        class="img-fluid card-img rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="./brand.html">
+                                        <h6 class="card-title">McLaren Senna</h6>
+                                        <p class="card-text"><small class="text-body-secondary">20 LISTING</small></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardStyle mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="./brand.html">
+                                    <img src="./assets/img/cars_page/popular_searches/Rolls-Royce_Cullinan.webp"
+                                        class="img-fluid card-img rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="./brand.html">
+                                        <h6 class="card-title">Rolls Royce Cullinan</h6>
+                                        <p class="card-text"><small class="text-body-secondary">2 LISTING</small></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardStyle mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="./brand.html">
+                                    <img src="./assets/img/cars_page/popular_searches/lamborghini.webp"
+                                        class="img-fluid card-img rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="./brand.html">
+                                        <h6 class="card-title">Lamborghini Aventador</h6>
+                                        <p class="card-text"><small class="text-body-secondary">40 LISTING</small></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured p-3">
+            <div class="container">
+                <h2 class="cat-heading">Featured</h2>
+                <div class="featured-carSec">
+                    <div class="row row-cols-2 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card cardCarFea">
+                                <a href="./details.html"><img src="./assets/img/cars_page/featured/porsche911.webp" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="./details.html">
+                                        <h5 class="card-title">$421,997</h5>
+                                        <p class="card-text">2024 Porsche 911 GT3</p>
+                                        <small>United Arab Emairates</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardCarFea">
+                                <a href="./details.html"><img src="./assets/img/cars_page/featured/lamborghini.webp" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="./details.html">
+                                        <h5 class="card-title">$288,320</h5>
+                                        <p class="card-text">2015 Lamborghini Aventador awd</p>
+                                        <small>United Arab Emairates</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardCarFea">
+                                <a href="./details.html"><img src="./assets/img/cars_page/featured/mercedes-benz.webp" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="./details.html">
+                                        <h5 class="card-title">$326,707</h5>
+                                        <p class="card-text">2021 Mercedes Benz AMG GT</p>
+                                        <small>United Arab Emairates</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardCarFea">
+                                <a href="./details.html"><img src="./assets/img/cars_page/featured/barbus.webp" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="./details.html">
+                                        <h5 class="card-title">$246,799</h5>
+                                        <p class="card-text">2024 Brabus SL 750</p>
+                                        <small>United Arab Emairates</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardCarFea">
+                                <a href="./details.html"><img src="./assets/img/cars_page/featured/mcLaren.webp" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="./details.html">
+                                        <h5 class="card-title">$419,990</h5>
+                                        <p class="card-text">2021 McLaren 765LT rwd</p>
+                                        <small>United Arab Emairates</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardCarFea">
+                                <a href="./details.html"><img src="./assets/img/cars_page/featured/rolls-roycle.webp" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="./details.html">
+                                        <h5 class="card-title">$75,000</h5>
+                                        <p class="card-text">2024 Rolls-Royce Cullinan Black Badge</p>
+                                        <small>United Arab Emairates</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe-container d-flex justify-content-between p-5 mt-4">
+                    <div class="sub-Content">
+                        <h3>Weekly Luxury Newsletter</h3>
+                        <p>Receive the beautifully curated selection of what’s trending in luxury with inside stories and tips from our experts</p>
+                    </div>
+                    <div class="sub-email d-flex flex-column justify-content-evenly">
+                        <input type="email" placeholder="Email" />
+                        <button type="submit">Subscribe</button>
+                        <small>BY SHARING YOUR EMAIL, YOU AGREE TO OUR <a href="#">TERMS OF USE</a> AND <a href="#">PRIVACY</a>.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer p-4 mt-4">
+        <div class="container">
+           <div class="footer-container d-flex flex-wrap justify-content-between">
+             <div class="footer-logo">
+                <div class="logo-ravix text-start">
+                    <a href="./index.html">
+                        <img src="./assets/img/general/Ravix_logo.png" alt="ravix" />
+                    </a>
+                </div>
+                <div class="social-media d-flex flex-wrap justify-content-center gap-4 ms-4">
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-instagram fa-sm" style="color: #000;"></i></a>
+                    </div>
+                     <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter fa-sm" style="color: #000;"></i></a>
+                    </div>
+                     <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook-f fa-sm" style="color: #000;"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-youtube fa-sm" style="color: #000;"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin fa-sm" style="color: #000;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content d-flex justify-content-between">
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Megacars</a>
+                    <a href="#">Technology</a>
+                    <a href="#">About</a>
+                    <a href="#">History</a>
+                </div>
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Dealer locator</a>
+                    <a href="#">Shop</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Factory tours</a>
+                </div>
+            </div>
+           </div>
+           <div class="copyright d-flex flex-wrap justify-content-between mt-2">
+            <div class="copyrighthisto">
+                <small>Copyright © since 1994</small>
+            </div>
+            <div class="copyrightlinks w-50 d-flex justify-content-evenly">
+                <a href="#"><small>Sitemap</small></a>
+                <a href="#"><small>Cookie Policy</small></a>
+                <a href="#"><small>Legal Links</small></a>
+                <a href="#"><small>Investor relations</small></a>
+            </div>
+           </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

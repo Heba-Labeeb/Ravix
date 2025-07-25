@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!--Font cdn-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <title>Ravix</title>
+  <!--custom design-->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <button class="btn btn-lg btn-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-start offcanv-font" data-bs-scroll="true" tabindex="-1"
+          id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+              Welcome!
+            </h6>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column gap-4">
+            <ul class="offcanvas-ul">
+              <li><a href="./justForYou.html">+ Just for You</a></li>
+            </ul>
+            <ul class="offcanvas-ul d-flex flex-column gap-2">
+              <li>
+                <i class="fa-solid fa-car-side fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Cars</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-sailboat fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Yachts</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-motorcycle fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Motorcycles</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-jet-fighter-up fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Jets</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-helicopter fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Helicopters</a>
+              </li>
+            </ul>
+            <ul class="offcanvas-ul d-flex flex-column gap-2">
+            
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="./index.html" class="logo-img"><img src="./assets/img/general/Ravix_logo.png" alt="" /></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="details py-4">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-6 position-relative">
+            <div class="h-100 ratio-box">
+              <img src="./assets/img/details_page/img_1.webp" class="img-fluid w-100 h-100 object-fit-cover"
+                alt="..." />
+            </div>
+            <div class="buttons-details position-absolute">
+              <button class="save-btn rounded-pill"><i class="fa-regular fa-heart fa-sm" style="color: #000;"></i>
+                Save</button>
+              <button class="share-btn rounded-pill"><i class="fa-solid fa-share fa-xs" style="color: #000;"></i>
+                Share</button>
+            </div>
+          </div>
+
+          <!-- صور صغيرة يمين -->
+          <div class="col-lg-6">
+            <div class="row g-2 h-100">
+              <div class="col-6">
+                <div class="h-100 ratio-box">
+                  <img src="./assets/img/details_page/img_2.webp" class="img-fluid w-100 h-100 object-fit-cover"
+                    alt=".." />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="h-100 ratio-box">
+                  <img src="./assets/img/details_page/img_3.webp" class="img-fluid w-100 h-100 object-fit-cover"
+                    alt=".." />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="h-100 ratio-box">
+                  <img src="./assets/img/details_page/img_4.webp" class="img-fluid w-100 h-100 object-fit-cover"
+                    alt="..." />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="h-100 ratio-box">
+                  <img src="./assets/img/details_page/img_5.webp" class="img-fluid w-100 h-100 object-fit-cover"
+                    alt="..." />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cars-info border-bottom w-100 mt-3 py-2">
+          <div class="name-price d-flex flex-wrap justify-content-between align-items-center">
+            <h1>Porsche 911 GT3 RS 2024</h1>
+            <span class="fs-4 fw-semibold">$421,998</span>
+          </div>
+          <div class="location">
+            <p>United Arab Emirates</p>
+          </div>
+        </div>
+        <div class="car-details border-bottom w-100 mt-3 py-2 d-flex gap-5">
+          <div class="detail">
+            <p class="fs-6 fw-medium">2024</p>
+            <span class="text-secondary">Year</span>
+          </div>
+          <div class="detail">
+            <p class="fs-6 fw-medium">0 Km</p>
+            <span class="text-secondary">Mileage</span>
+          </div>
+          <div class="detail">
+            <p class="fs-6 fw-medium">6 Cylinder</p>
+            <span class="text-secondary">Engine</span>
+          </div>
+          <div class="detail">
+            <p class="fs-6 fw-medium">Dual Clutch</p>
+            <span class="text-secondary">Gearbox</span>
+          </div>
+        </div>
+        <div class="discription border-bottom w-100 mt-3 py-2">
+          <h3>About This Car</h3>
+          <p>
+            The 2024 Porsche 911 GT3 RS Weissach delivers 525 hp from a high-revving 4.0L flat-six engine, hitting 0–100
+            km/h in 3.2 seconds. The Weissach package cuts weight with carbon fiber parts, boosting agility and speed.
+            Active aerodynamics, including DRS and an adaptive diffuser, optimize downforce in real time. Inside, carbon
+            fiber bucket seats offer firm support and safety. Built for maximum track performance.<br /><br />Source:
+            Porsche
+          </p>
+        </div>
+        <div class="qustion_sec border-bottom w-100 mt-3 py-3">
+          <h2>Ask a Question</h2>
+          <div class="agent-info d-flex justify-content-start align-items-center gap-4 mt-3">
+            <div class="cont-icon">
+              <i class="fa-regular fa-circle-user fa-2xl" style="color: #6c757d;"></i>
+            </div>
+            <div class="agent-info py-2">
+              <div class="agent-name d-flex flex-column mb-2">
+                <p class="mb-1 fs-5 fw-medium">F1rst Motors</p>
+                <span class="text-secondary">4 months with Ravix</span>
+              </div>
+              <div class="agent-number mt-4 text-secondary">
+                <i class="fa-solid fa-phone" style="color: #6c757d;"></i> <a href="#" class="text-secondary">Show phone
+                  number</a>
+              </div>
+            </div>
+          </div>
+          <div class="qus-input mt-3">
+            <p class="fw-semibold">Contact Agent</p>
+            <textarea placeholder="Ask the seller for more information about this car..." class="w-100 p-2"></textarea>
+            <button type="submit" class="ask-btn">Ask a question</button>
+          </div>
+        </div>
+
+        <div class="featured-carSec border-bottom mt-2 py-4">
+          <h2 class="cat-heading">You Might Also Like</h2>
+          <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card carFBrandPage">
+                <a href="#"><img src="./assets/img/brand_page/car_1.webp" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a href="#">
+                    <h5 class="card-title">$1,851,347</h5>
+                    <p class="card-text">2015 Porsche 918</p>
+                    <small>United Arab Emairates</small>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card carFBrandPage">
+                <a href="#"><img src="./assets/img/brand_page/car_12.webp" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a href="#">
+                    <h5 class="card-title">$1,402,123</h5>
+                    <p class="card-text">2015 Porsche 918 spyder</p>
+                    <small>United Arab Emairates</small>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card carFBrandPage">
+                <a href="#"><img src="./assets/img/brand_page/car_2.webp" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <a href="#">
+                    <h5 class="card-title">$229,990</h5>
+                    <p class="card-text">2021 Porsche 911 Turbo S</p>
+                    <small>United Arab Emairates</small>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <section class="subscribe">
+            <div class="container">
+                <div class="subscribe-container d-flex justify-content-between mt-4">
+                    <div class="sub-Content">
+                        <h3>Weekly Luxury Newsletter</h3>
+                        <p>Receive the beautifully curated selection of what’s trending in luxury with inside stories and tips from our experts</p>
+                    </div>
+                    <div class="sub-email d-flex flex-column justify-content-evenly">
+                        <input type="email" placeholder="Email" />
+                        <button type="submit">Subscribe</button>
+                        <small>BY SHARING YOUR EMAIL, YOU AGREE TO OUR <a href="#">TERMS OF USE</a> AND <a href="#">PRIVACY</a>.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer p-4 mt-4">
+        <div class="container">
+           <div class="footer-container d-flex flex-wrap justify-content-between">
+             <div class="footer-logo">
+                <div class="logo-ravix text-start">
+                    <a href="./index.html">
+                        <img src="./assets/img/general/Ravix_logo.png" alt="ravix" />
+                    </a>
+                </div>
+                <div class="social-media d-flex flex-wrap justify-content-center gap-4 ms-4">
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-instagram fa-sm" style="color: #000;"></i></a>
+                    </div>
+                     <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter fa-sm" style="color: #000;"></i></a>
+                    </div>
+                     <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook-f fa-sm" style="color: #000;"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-youtube fa-sm" style="color: #000;"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin fa-sm" style="color: #000;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content d-flex justify-content-between">
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Megacars</a>
+                    <a href="#">Technology</a>
+                    <a href="#">About</a>
+                    <a href="#">History</a>
+                </div>
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Dealer locator</a>
+                    <a href="#">Shop</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div class="contentSect d-flex flex-column justify-content-evenly">
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Factory tours</a>
+                </div>
+            </div>
+           </div>
+           <div class="copyright d-flex flex-wrap justify-content-between mt-2">
+            <div class="copyrighthisto">
+                <small>Copyright © since 1994</small>
+            </div>
+            <div class="copyrightlinks w-50 d-flex justify-content-evenly">
+                <a href="#"><small>Sitemap</small></a>
+                <a href="#"><small>Cookie Policy</small></a>
+                <a href="#"><small>Legal Links</small></a>
+                <a href="#"><small>Investor relations</small></a>
+            </div>
+           </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

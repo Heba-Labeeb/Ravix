@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!--Font cdn-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <title>Ravix</title>
+  <!--custom design-->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+
+
+    <header class="header">
+    <div class="container">
+      <div class="logo">
+        <button class="btn btn-lg btn-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-start offcanv-font" data-bs-scroll="true" tabindex="-1"
+          id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+              Welcome!
+            </h6>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column gap-4">
+            <ul class="offcanvas-ul">
+              <li><a href="./justForYou.html">+ Just for You</a></li>
+            </ul>
+            <ul class="offcanvas-ul d-flex flex-column gap-2">
+              <li>
+                <i class="fa-solid fa-car-side fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Cars</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-sailboat fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Yachts</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-motorcycle fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Motorcycles</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-jet-fighter-up fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Jets</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-helicopter fa-xs" style="color: #151515;"></i>
+                <a href="./cars.html">Helicopters</a>
+              </li>
+            </ul>
+            <ul class="offcanvas-ul d-flex flex-column gap-2">
+              
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="./index.html" class="logo-img"><img src="./assets/img/general/Ravix_logo.png" alt="" /></a>
+      </div>
+    </div>
+    </header>
+
+    <main>
+        <section class="signUp">
+            <div class="container">
+                <form class="form-signUp">
+                    <div class="form-group d-flex flex-column mt-1">
+                    <label for="UserName" class="label fs-5 fw-bold ms-2">UserName</label>
+                    <input id="UserName" class="userName w-100 p-3 rounded-4" type="text" placeholder="Enter your user name" />
+                    <p class="textLog-danger userSignError ms-1"></p>
+                </div>
+                <div class="form-group d-flex flex-column mt-2">
+                    <label for="email" class="label fs-5 fw-bold ms-2">Email</label>
+                    <input id="email" class="emailSign w-100 p-3 rounded-4" type="email" placeholder="Enter a valid email" />
+                    <p class="textLog-danger emailSignError ms-1"></p>
+                </div>
+                <div class="form-group d-flex flex-column mt-1">
+                    <label for="password" class="label fs-5 fw-bold ms-2">Password</label>
+                    <input id="password" class="passwordSign w-100 p-3 rounded-4" type="password" placeholder="Enter a strong password" />
+                    <p class="textLog-danger passwordSignError ms-1"></p>
+                </div>
+                <div class="form-group d-flex flex-column mt-1">
+                    <label for="confirmPass" class="label fs-5 fw-bold ms-2">Confirm Password</label>
+                    <input id="confirmPass" class="confirmPass w-100 p-3 rounded-4" type="password" placeholder="Confirm your password" />
+                    <p class="textLog-danger confirmPassError ms-1"></p>
+                </div>
+                <div class="form-group mt-1">
+                    <button type="submit" class="signBtn border border-0 rounded-4">Sign Up</button>
+                </div>
+
+                </form>
+
+                <div class="logIn_signSec mt-3">
+                <div class="container">
+                    <p class="fw-bold" >Or do your already have an account? 
+                        <a href="./login.html" class="text-decoration-underline text-danger"> Log in</a>
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <script src="./assets/js/sign.js"></script>
+
+</body>
+</html>
